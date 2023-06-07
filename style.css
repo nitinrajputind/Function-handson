@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Heading{
+    margin-top: 20px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 800;
+    color: blueviolet;
+}
+hr{
+    background-color: grey;
+    height: 4px;
+    width: 100%;
+    margin-top: 40px;
+}
+.mainContanier{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.bold{
+    font-weight: 700;
+    margin: 20px 0;
+    font-size: 20px;
+
+}
+.ansBold{
+    font-weight: 600;
+    color: blue;
+}
+.code{
+    color: red;
+}
+.green{
+    color: green;
+    font-weight: 600;
+    font-size: 18px;
+}

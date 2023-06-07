@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- External style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="Heading">Day :- 1</h1>
+    <hr>
+    <div class="mainContanier">
+        <div class="question1">
+            <p class="bold">Q1 : Create one function with zero parameter having a console statement;</p>
+            <p class="ansBold">ANS :-</p>
+            <pre class="code">
+                function question(){
+                    console.log("This is Zero peremeter Function")
+                }
+                question();
+            </pre>
+            <p class="ansBold">Output :- This is Zero peremeter Function</p>
+        </div>
+        <hr>
+        <div class="question2">
+            <p class="bold">Q2 : Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"</p>
+            <p class="ansBold">ANS :-</p>
+            <pre class="code">
+                function question2(a,b){
+                    let sum = a+b;
+                    console.log(sum)
+                }
+                question2(3,4)
+            </pre>
+            <p class="ansBold">Output :- 7</p>
+        </div>
+        <hr>
+        <div class="question3">
+            <p class="bold">Q3 : Create one arrow function </p>
+            <p class="ansBold">ANS :-</p>
+            <pre class="code">
+                const arrow=()=>{
+                    console.log("This is arrow function ");
+                }
+                arrow();
+            </pre>
+            <p class="ansBold">Output :- This is arrow function</p>
+        </div>
+        <hr>
+        <div class="question4">
+            <p class="bold">Q4 : print Output  </p>
+            <pre class="code">
+                var x = 21;
+                var girl = function () {
+                    console.log(x);
+                    var x = 20;
+                };
+                girl ();
+            </pre>
+            <p class="ansBold">Output :- undefined</p>
+            <p>NOTE :-  
+                <p class="green">within the function scope x gets hoisted and since it is of var type, we get the output as undefined</p>
+            </p>
+        </div>
+        <hr>
+        <div class="question5">
+            <p class="bold">Q5 : print Output</p>
+            <pre class="code">
+                var x = 21;
+                girl ();
+                console.log(x)
+                function girl() {
+                    console.log(x);
+                    var x = 20;
+                };
+            </pre>
+            <p class="ansBold">Output :-</p>
+            <p class="ansBold">undefined
+                <br>
+                21
+            </p>
+            <p>NOTE :-
+                <p class="green">Due to hoisting of the variable within the function scope, first we get the output as undefined. x has been initialized as 21 already and that is printed when console.log(x) is executed</p>
+            </p>
+        </div>
+        <hr>
+        <div class="question6">
+            <p class="bold">Q6 : Print Output</p>
+            <pre class="code">
+                var x = 21;
+                a();
+                b();
+                function a() {
+    
+                    x = 20;
+                   console.log(x);
+                 };
+                  function b() {
+                     
+                     x = 40;
+                    console.log(x);
+                 };
+            </pre>
+            <p class="ansBold">Output :-</p>
+            <p class="ansBold">20 <br> 40</p>
+            <p>NOTE :- 
+                <p class="green">value of x is initialized as 20 within the function scope of a() and output is 20. value of x is initialized as 40 within the function scope of b(), so the output is 40.</p>
+            </p>
+        </div>
+        <hr>
+        <div class="question7">
+            <p class="bold">Q7 : Write a function that accepts parameter n and returns factorial of n </p>
+            <pre class="code">
+                const fact=(num)=>{
+                    ans=1
+                    if(num>0){
+                        for (let i=1; i<=num;i++){
+                            ans=ans*i
+                        }
+                        console.log(ans)
+                    }
+                    else{
+                        console.log("enter a postive no")
+                    }
+                }
+                
+                fact(5)
+            </pre>
+            <p class="ansBold">Output :- 120</p>
+        </div>
+        
+    </div>
+
+
+    <h1 class="Heading">Day :- 2</h1>
+    <hr>
+    <div class="mainContanier">
+        <div class="question1">
+            <p class="bold">Q1 : Guess The Output </p>
+            <pre>
+                function FindSum(a, b){
+                    return a + b;
+                }
+                
+                function DisplayData(data, batch){
+                    console.log(`i am from ${data} and My batch is EA${batch}`)
+                }
+                
+                DisplayData("PrepBytes", FindSum(10, 13));
+            </pre>
+            <p class="ansBold">Output :- i am from PrepBytes and My batch is EA23 </p>
+            <p>NOTE :- 
+                <p class="green">The 1st parameter "data" gets the value of the string "Prepbytes" from the 1st argument. Function FindSum is the 2nd argument and it gets executed, value 19 is returned and it goes to "batch" the 2nd parameter.</p>
+            </p>
+        </div>
+        <hr>
+        <div class="question2">
+            <p class="bold">Q2 : Guess the Output</p>
+            <pre>
+
+            </pre>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
