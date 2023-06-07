@@ -140,7 +140,7 @@
     <div class="mainContanier">
         <div class="question1">
             <p class="bold">Q1 : Guess The Output </p>
-            <pre>
+            <pre class="code">
                 function FindSum(a, b){
                     return a + b;
                 }
@@ -159,9 +159,49 @@
         <hr>
         <div class="question2">
             <p class="bold">Q2 : Guess the Output</p>
-            <pre>
-
+            <pre class="code">
+                Abc();
+                const Abc = function(){
+                    let value = 20;
+                    console.log(value);
+                }
             </pre>
+            <p class="ansBold">Output :- ReferenceError</p>
+            <p> NOTE :- 
+                <p class="green">We get this error because Abc has not been initialized before</p>
+            </p>
+        </div>
+        <hr>
+        <div class="question3">
+            <p class="bold"> Q3 : Guess the output</p>
+            <pre class="code">
+                var a = 10;
+                (function (){
+                    console.log(a);
+                    var a = 20;
+                })();
+            </pre>
+            <p class="ansBold"> Output :- undefined</p>
+            <p>NOTE :- 
+                <p class="green">Before declaration in memory allocation the a value wants to be printed.</p>
+            </p>
+        </div>
+        <hr>
+        <div class="question4">
+            <p class="bold">Q4 : Guess the Output</p>
+            <pre class="code">
+                const greet =  function(name){
+                    return function(m){
+                        console.log(`Hi!! ${name}, ${m}`);
+                    }
+                }
+                const greet_message = greet('EAC-01');
+                greet_message("Welcome To PrepBytes")
+            </pre>
+            <p class="ansBold"> Output :- Hi!! EAC-01, Welcome To PrepBytes</p>
+            <p>NOTE :-
+                <p class="green">it will directly to come const greet_message, in this the greet is assigned with argument EA19, which will make connection to greet variable in const, and name will be printed as EA19. Same goes to function of m.</p>
+            </p>
         </div>
     </div>
     <script src="./script.js"></script>
